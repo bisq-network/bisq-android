@@ -5,6 +5,9 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
