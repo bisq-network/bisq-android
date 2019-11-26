@@ -1,0 +1,3 @@
+[submodule "bisq"]
+	path = bisq
+	url = git@github.com:bisq-network/bisq.git
