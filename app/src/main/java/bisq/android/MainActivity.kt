@@ -1,7 +1,8 @@
-package bisq.android.bisq_android
+package bisq.android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import bisq.android.bisq_android.R
 
 class MainActivity : AppCompatActivity() {
 

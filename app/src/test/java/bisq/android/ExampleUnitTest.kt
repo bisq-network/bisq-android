@@ -1,4 +1,4 @@
-package bisq.android.bisq_android
+package bisq.android
 
 import org.junit.Test
 
