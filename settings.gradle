@@ -1,0 +1,4 @@
+includeBuild 'bisq'
+include ':app'
+
+rootProject.name='bisq-android'
