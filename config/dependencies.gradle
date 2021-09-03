@@ -1,0 +1,24 @@
+ext {
+
+    versions += [
+            'applicationId': "bisq.android",
+            'compileSdk'   : 30,
+            'minSdk'       : 21,
+            'targetSdk'    : 30,
+            'buildTools'   : "30.0.3",
+            'versionCode'  : 1,
+            'versionName'  : "1.0",
+            'ktx'          : "1.2.0",
+            'appCompat'    : "1.1.0",
+            'material'     : "1.1.0",
+            'constraint'   : "2.0.4"
+    ]
+
+    libraries += [
+            'kotlin'    : "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}",
+            'ktx'       : "androidx.core:core-ktx:${versions.ktx}",
+            'appCompat' : "androidx.appcompat:appcompat:${versions.appCompat}",
+            'material'  : "com.google.android.material:material:${versions.material}",
+            'constraint': "androidx.constraintlayout:constraintlayout:${versions.constraint}"
+    ]
+}
