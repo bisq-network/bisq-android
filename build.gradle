@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    ext {
+        versions = [
+                'kotlin': "1.5.10",
+                'gradle': "4.2.2"
+        ]
+        libraries = [
+                'kotlinPlugin': "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
+                'gradle'      : "com.android.tools.build:gradle:${versions.gradle}"
+        ]
+    }
+
+    dependencies {
+        classpath libraries.gradle
+        classpath libraries.kotlinPlugin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+
+subprojects {
+    apply from: "${rootProject.projectDir}/config/dependencies.gradle"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
